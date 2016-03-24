@@ -530,7 +530,8 @@ function! AutoPairsTryInit()
 endfunction
 
 " Always silent the command
-inoremap <silent> <SID>AutoPairsReturn <C-R>=AutoPairsReturn()<CR>
+" oinoremap <silent> <SID>AutoPairsReturn <C-R>=AutoPairsReturn()<CR>
+inoremap <buffer> <silent> <CR> <C-R>=AutoPairsReturn()<CR>
 imap <script> <Plug>AutoPairsReturn <SID>AutoPairsReturn
 
 
